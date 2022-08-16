@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+   imageURL: string = "https://www.liveaquaria.com/images/categories/product/lg_66284_Flame_Angelfish.jpg"
+
   constructor() { }
 
   ngOnInit(): void {
