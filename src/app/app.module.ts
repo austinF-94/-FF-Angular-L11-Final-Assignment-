@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ProductsComponent } from './products/products.component';
 import { NavigationPageComponent } from './navigation-page/navigation-page.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -15,16 +17,20 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { FishStockComponent } from './fish-stock/fish-stock.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { NotFoundComponent } from './not-found/not-found.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    FishStockComponent,
+    AboutComponent,
+    ProductsComponent,
+    NotFoundComponent,
     NavigationPageComponent,
-    FishStockComponent
-  ],
+ ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -36,7 +42,8 @@ import { FishStockComponent } from './fish-stock/fish-stock.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

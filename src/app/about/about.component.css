@@ -1,0 +1,18 @@
+.fullScreen 
+{
+    text-align: center;
+    height: 100vh;
+    float: left;
+    width: 48%;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: .5%;
+}
+.logoPic 
+{
+    float: right;
+    width: 48%;
+    margin-top: 1%;
+    margin-left: .5%;
+    margin-right: 1%;
+}
