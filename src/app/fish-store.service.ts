@@ -8,7 +8,7 @@ import { Fish } from './models/fish';
 })
 export class FishStoreService {
 
-  baseUrl: string = 'http://localhost:3000/products';
+  baseUrl: string = 'http://localhost:3000/Fish';
 
 
   constructor(private http: HttpClient) { }
@@ -17,13 +17,18 @@ export class FishStoreService {
     return this.http.get<Fish[]>(this.baseUrl);
   }
 
-  getProductById(id: number): Observable<Fish>
-  {
+  getProductById(id: number): Observable<Fish> {
     return this.http.get<Fish>(this.baseUrl + "/" + id);
-  }
+}
 
   createProduct(products: Fish): Observable<Fish>
   {
     return this.http.post<Fish>(this.baseUrl, products);
   }
+  editContactByID(id: number, edittedContact: Fish): Observable<Fish> {
+    return this.http.put<Fish>(this.baseUrl + "/" + id, edittedContact);
+}
+  deleteContactByID(id: number): Observable<any> {
+    return this.http.delete<any>(this.baseUrl + "/" + id)
+}
 }

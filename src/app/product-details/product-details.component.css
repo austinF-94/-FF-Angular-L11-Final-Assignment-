@@ -4,7 +4,6 @@
     margin-left: 5%;
     width: 20%;
 }
-
 .fullScreen 
 {
   height: 100vh;
@@ -22,10 +21,14 @@ margin-bottom: 5%;
 #product-image {
   width: 400px;
   height: 300px;
-  margin-left: 20px;
-  margin-top: 10px;
+  margin: auto;
 }
 #card-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  height: 100vh;
+  background-color: aqua;
+}
+.cardContainer
+{
+  text-align: center;
 }

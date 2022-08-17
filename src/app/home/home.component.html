@@ -1,3 +1,8 @@
+<mat-toolbar>
+    <span>Fogle Farms LLC</span>
+    <span class="example-spacer"></span>
+    <span><img class="logoPic" [src]="imageURL1"></span>
+</mat-toolbar>
 <mat-drawer-container class="example-container">
     <mat-drawer mode="side" opened>
             <a mat-raised-button routerLink = "/home">Home</a><br>
@@ -6,10 +11,16 @@
     </mat-drawer>
     <mat-drawer-content>
         <div class="fullScreen">
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo tincidunt mi vel fringilla. Phasellus ultrices orci nec congue volutpat. Nam condimentum orci quis sapien iaculis, ut posuere massa feugiat. Donec semper ultricies laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean ac ligula convallis, sollicitudin enim non, accumsan ante. Cras porta, mauris et vulputate sagittis, ante urna cursus mi, in ultrices leo nibh vitae nisi. Vivamus cursus mauris vitae urna ultricies, sit amet suscipit odio efficitur. Nam elementum felis ut eros eleifend consectetur. Nunc vitae risus et massa accumsan elementum. Integer ultricies ac metus eu fermentum. Nulla efficitur, odio eu vehicula feugiat, turpis justo tincidunt risus, ut placerat lectus mi sit amet risus. Phasellus sodales lectus eu pellentesque facilisis. Maecenas nec faucibus ante, sit amet sollicitudin mauris. Phasellus dapibus scelerisque ultricies.
-            
-                Aliquam nisl odio, dignissim id malesuada vitae, commodo quis erat. Fusce at interdum libero. Suspendisse quam dolor, sollicitudin et arcu eu, vulputate consectetur libero. Aenean quis enim mollis, accumsan dolor quis, pellentesque mauris. Integer massa lorem, consectetur sed eleifend ac, aliquam id urna. Quisque vitae nulla tempus, vehicula nisi at, pellentesque urna. Suspendisse at eros non purus porttitor dignissim vitae vel justo.
-            </p>
+            <span>
+                <img [src]="products[0].imageURL" class="homeScreenFish">
+                <img [src]="products[1].imageURL" class="homeScreenFish">
+                <img [src]="products[2].imageURL" class="homeScreenFish">
+            </span>
         </div>
     </mat-drawer-content>
 </mat-drawer-container>
+
+
+
+
+

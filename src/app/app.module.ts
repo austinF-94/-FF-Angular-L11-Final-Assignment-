@@ -19,6 +19,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { NotFoundComponent } from './not-found/not-found.component';
+import {MatCardModule} from '@angular/material/card';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { CreateProductComponent } from './create-product/create-product.component';
+import { EditProductComponent } from './edit-product/edit-product.component';
 
 
 
@@ -30,6 +34,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ProductsComponent,
     NotFoundComponent,
     NavigationPageComponent,
+    ProductDetailsComponent,
+    CreateProductComponent,
+    EditProductComponent,
  ],
   imports: [
     BrowserModule,
@@ -44,6 +51,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     MatIconModule,
     MatListModule,
     MatExpansionModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

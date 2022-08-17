@@ -1,15 +1,39 @@
-<mat-drawer-container class="example-container">
+<mat-toolbar>
+    <span>Fogle Farms LLC</span>
+    <span class="example-spacer"></span>
+    <span><img class="logoPic" [src]="imageURL2"></span>
+    <a mat-raised-button routerLink = "/create">Create</a>
+</mat-toolbar>
+
+ <mat-drawer-container class="example-container">
     <mat-drawer mode="side" opened>
             <a mat-raised-button routerLink = "/home">Home</a><br>
             <a mat-raised-button routerLink = "/about">About</a><br>
             <a mat-raised-button routerLink = "/products">Products</a>
     </mat-drawer>
-    <mat-drawer-content>
-        <div class="fullScreen">
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo tincidunt mi vel fringilla. Phasellus ultrices orci nec congue volutpat. Nam condimentum orci quis sapien iaculis, ut posuere massa feugiat. Donec semper ultricies laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean ac ligula convallis, sollicitudin enim non, accumsan ante. Cras porta, mauris et vulputate sagittis, ante urna cursus mi, in ultrices leo nibh vitae nisi. Vivamus cursus mauris vitae urna ultricies, sit amet suscipit odio efficitur. Nam elementum felis ut eros eleifend consectetur. Nunc vitae risus et massa accumsan elementum. Integer ultricies ac metus eu fermentum. Nulla efficitur, odio eu vehicula feugiat, turpis justo tincidunt risus, ut placerat lectus mi sit amet risus. Phasellus sodales lectus eu pellentesque facilisis. Maecenas nec faucibus ante, sit amet sollicitudin mauris. Phasellus dapibus scelerisque ultricies.
-            
-                Aliquam nisl odio, dignissim id malesuada vitae, commodo quis erat. Fusce at interdum libero. Suspendisse quam dolor, sollicitudin et arcu eu, vulputate consectetur libero. Aenean quis enim mollis, accumsan dolor quis, pellentesque mauris. Integer massa lorem, consectetur sed eleifend ac, aliquam id urna. Quisque vitae nulla tempus, vehicula nisi at, pellentesque urna. Suspendisse at eros non purus porttitor dignissim vitae vel justo.
-            </p>
-        </div>
+
+    <mat-drawer-content id="card-container">
+
+        <mat-card *ngFor="let p of products" [routerLink]="['products/', p.id]"  >
+           <mat-card-header>
+              <mat-card-title>
+                <span>{{p.fishName}}</span>
+              </mat-card-title>
+            </mat-card-header> 
+            <mat-card-content>
+              <img id="product-image" mat-card-image [src]="p.imageURL" >
+
+              <span>
+                <a mat-button [routerLink] = '["/products", p.id]'>Details</a>
+                <a mat-button href="edit">Edit</a>
+                <a mat-button (click)="onDelete(p.id)">Delete</a>
+
+              </span>
+            </mat-card-content>
+             <mat-card-actions>
+
+            </mat-card-actions>
+          </mat-card>
+
     </mat-drawer-content>
 </mat-drawer-container>

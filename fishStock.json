@@ -1,36 +1,52 @@
 {
-    "Fish": [
+  "Fish": [
     {
-        "id": 1,
-        "fishName": "Percula Clownfish",
-        "scientificName": "(Amphiprion percula)",
-        "careLevel": "Easy",
-        "imageURL": "https://images.unsplash.com/photo-1544552866-d3ed42536cfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyY3VsYSUyMGNsb3duZmlzaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-        "price": 24.99
+      "id": 7,
+      "fishName": "Green Mandarin",
+      "scientificName": "(Synchiropus splendidus)",
+      "careLevel": "Difficult",
+      "imageURL": "https://www.liveaquaria.com/images/categories/large/lg_71302_Green_Mandarin.jpg",
+      "price": 34.99
     },
     {
-        "id": 2,
-        "fishName": "Flame Angelfish",
-        "scientificName": "(Centropyge loricula)",
-        "careLevel": "Moderate",
-        "imageURL": "https://www.liveaquaria.com/images/categories/product/lg_66284_Flame_Angelfish.jpg",
-        "price": 109.99
+      "id": 8,
+      "fishName": "Volitan Lionfish",
+      "scientificName": "(Pterois volitans)",
+      "careLevel": "Moderate",
+      "imageURL": "https://www.reefaquarium.com/wp-content/reefer/2013/04/ll1_zpse6a14ae51.jpg",
+      "price": 99.99
     },
     {
-        "id": 3,
-        "fishName": "Green Mandarin",
-        "scientificName": "(Synchiropus splendidus)",
-        "careLevel": "Difficult",
-        "imageURL": "https://www.liveaquaria.com/images/categories/large/lg_71302_Green_Mandarin.jpg",
-        "price": 34.99
+      "id": 9,
+      "fishName": "Acropora cerealis",
+      "scientificName": "Acropora sp",
+      "careLevel": "Difficult",
+      "imageURL": "https://www.liveaquaria.com/images/categories/product/lg-2660287-02.jpg",
+      "price": "119.99"
     },
     {
-        "id": 4,
-        "fishName": "Volitan Lionfish",
-        "scientificName": "(Pterois volitans)",
-        "careLevel": "Moderate",
-        "imageURL": "https://www.reefaquarium.com/wp-content/reefer/2013/04/ll1_zpse6a14ae51.jpg",
-        "price": 99.99
+      "id": 7,
+      "fishName": "Green Mandarin",
+      "scientificName": "(Synchiropus splendidus)",
+      "careLevel": "Difficult",
+      "imageURL": "https://www.liveaquaria.com/images/categories/large/lg_71302_Green_Mandarin.jpg",
+      "price": 34.99
+    },
+    {
+      "id": 8,
+      "fishName": "Volitan Lionfish",
+      "scientificName": "(Pterois volitans)",
+      "careLevel": "Moderate",
+      "imageURL": "https://www.reefaquarium.com/wp-content/reefer/2013/04/ll1_zpse6a14ae51.jpg",
+      "price": 99.99
+    },
+    {
+      "id": 9,
+      "fishName": "Acropora cerealis",
+      "scientificName": "Acropora sp",
+      "careLevel": "Difficult",
+      "imageURL": "https://www.liveaquaria.com/images/categories/product/lg-2660287-02.jpg",
+      "price": "119.99"
     }
-    ]
-  }
+  ]
+}

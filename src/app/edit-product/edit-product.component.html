@@ -1,0 +1,20 @@
+<h1>Edit Contact</h1>
+<form #form="ngForm" (ngSubmit)="onSubmit()">
+    <label>Fish Name</label>
+    <input type="text" name="name" [(ngModel)]="newProduct.fishName"><br>
+
+    <label>Scientific Name</label>
+    <input type="text" name="Scientific Name" [(ngModel)]="newProduct.scientificName"><br>
+
+    <label>Difficulty to care for</label>
+    <input type="text" name="care Level" [(ngModel)]="newProduct.careLevel"><br>
+
+    <label>Stock Image</label>
+    <input type="text" name="image" [(ngModel)]="newProduct.imageURL"><br>
+
+    <label>Price</label>
+    <input type="text" name="price" [(ngModel)]="newProduct.price"><br>
+
+  <button type="submit">Edit Product</button>
+  <button [routerLink] = '["/products"]'>Back</button>
+</form>
