@@ -27,15 +27,9 @@ export class FishStoreService {
   {
     return this.http.get<Fish[]>(this.sortByPriceLowToHigh);
   }
-
-
-
-  // make a service function similar to getproducts() to sort price, pass this function in to sort() method example function compare(a.price, b.price) 
-
   getProductById(id: number): Observable<Fish> {
     return this.http.get<Fish>(this.baseUrl + "/" + id);
-}
-
+  }
   createProduct(products: Fish): Observable<Fish>
   {
     return this.http.post<Fish>(this.baseUrl, products);
@@ -46,22 +40,5 @@ export class FishStoreService {
   deleteContactByID(id: number): Observable<any> {
     return this.http.delete<any>(this.baseUrl + "/" + id)
   }
-  // sortProductsByPrice(data:Fish, asc: boolean): Observable<Fish[]>
-  // {
-  //   return this.http.get<Fish[]>(this.baseUrl);
-
-  // this.Fish[].sort(function(a: Fish, b: Fish) 
-  // {
-  //     if (asc) {
-  //         return (a.price > b.price) ? 1 : ((a.price < b.price) ? -1 : 0);
-  //     } else {
-  //         return (b.price > a.price) ? 1 : ((b.price < a.price) ? -1 : 0);
-  //     }
-  // });
-  // sortProductListByPriceLowToHigh(): Observable<Fish[]> 
-  // {
-  //   return this.http.get<Fish[]>(this.sortByPriceLowToHigh);
-  // }
-  
-  }
+}
 
