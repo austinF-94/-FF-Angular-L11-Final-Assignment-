@@ -1,10 +1,9 @@
-.logoPic 
+.logoPic1 
 {
     display: block;
     margin-left: 5%;
     width: 20%;
 }
-
 .fullScreen 
 {
   height: 100vh;
@@ -27,5 +26,16 @@ margin-bottom: 5%;
 }
 #card-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.Footer
+{
+  text-align: center;
+  background-color: aqua;
+}
+.logoPic2 
+{
+  display: block;
+  margin: auto;    
+  width: 3%;
 }

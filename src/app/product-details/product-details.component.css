@@ -26,9 +26,19 @@ margin-bottom: 5%;
 #card-container {
   text-align: center;
   height: 100vh;
-  background-color: aqua;
 }
 .cardContainer
 {
   text-align: center;
+}
+.Footer
+{
+  text-align: center;
+  background-color: aqua;
+}
+.logoPic2 
+{
+  display: block;
+  margin: auto;    
+  width: 3%;
 }

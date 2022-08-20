@@ -23,7 +23,9 @@ import {MatCardModule} from '@angular/material/card';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CreateProductComponent } from './create-product/create-product.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
-
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatSelectModule} from '@angular/material/select';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 @NgModule({
@@ -51,7 +53,10 @@ import { EditProductComponent } from './edit-product/edit-product.component';
     MatIconModule,
     MatListModule,
     MatExpansionModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule,
+    MatSelectModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,16 +10,16 @@ import { FishStoreService } from '../fish-store.service';
 })
 export class ProductsComponent implements OnInit {
 
-  imageURL2: string = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL5ieoT4vHvq-E79fYJFyEzWbu9D07eXcaWg&usqp=CAU"
+  imageURL1: string = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL5ieoT4vHvq-E79fYJFyEzWbu9D07eXcaWg&usqp=CAU"
 
 
-  products: Fish[] = [];
+  products: Fish[] = [];  
 
   constructor(private service: FishStoreService) { }
 
   ngOnInit(): void {
-    this.loadContacts();
-    this.service.getProductList().subscribe(result => 
+    this.service.getProductList
+    ().subscribe(result => 
       {
         this.products = result;
       });
@@ -27,15 +27,33 @@ export class ProductsComponent implements OnInit {
   onDelete(id: number)
 {
   this.service.deleteContactByID(id).subscribe(response => {
-      console.log(response);
-      this.loadContacts();
+      this.getProducts();
   });
 }
-loadContacts() 
+getProducts() 
 {
   this.service.getProductList().subscribe(foundContact => {
-      this.products = foundContact;
+      this.products = foundContact
+      this.products
+
   });
 }
+sortProductsLowToHigh() 
+{
+  this.service.getProductListPriceLowToHigh().subscribe(foundContact => {
+      this.products = foundContact
+      this.products
+
+  });
+}
+sortProductsHighToLow() 
+{
+  this.service.getProductListPriceHighToLow().subscribe(foundContact => {
+      this.products = foundContact
+      this.products
+
+  });
+}
+
 
 }

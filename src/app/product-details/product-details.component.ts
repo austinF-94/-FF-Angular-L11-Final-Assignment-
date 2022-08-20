@@ -11,7 +11,7 @@ import { FishStoreService } from '../fish-store.service';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  imageURL2: string = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL5ieoT4vHvq-E79fYJFyEzWbu9D07eXcaWg&usqp=CAU"
+  imageURL1: string = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL5ieoT4vHvq-E79fYJFyEzWbu9D07eXcaWg&usqp=CAU"
 
   id: number = 0;
 

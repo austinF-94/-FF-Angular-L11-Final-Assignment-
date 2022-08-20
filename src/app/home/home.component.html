@@ -1,24 +1,31 @@
 <mat-toolbar>
     <span>Fogle Farms LLC</span>
     <span class="example-spacer"></span>
-    <span><img class="logoPic" [src]="imageURL1"></span>
+    <span><img class="logoPic1" [src]="imageURL1"></span>
 </mat-toolbar>
-<mat-drawer-container class="example-container">
+
+<mat-drawer-container>
     <mat-drawer mode="side" opened>
             <a mat-raised-button routerLink = "/home">Home</a><br>
             <a mat-raised-button routerLink = "/about">About</a><br>
             <a mat-raised-button routerLink = "/products">Products</a>
     </mat-drawer>
+
     <mat-drawer-content>
         <div class="fullScreen">
             <span>
-                <img [src]="products[0].imageURL" class="homeScreenFish">
-                <img [src]="products[1].imageURL" class="homeScreenFish">
-                <img [src]="products[2].imageURL" class="homeScreenFish">
+                <ng-container *ngFor="let p of products; let i = index">
+                    <ng-container *ngIf="i < 3">
+                        <img [src]="p.imageURL" class="homeScreenFish">
+                    </ng-container>
+                </ng-container>
             </span>
         </div>
     </mat-drawer-content>
 </mat-drawer-container>
+<footer class="Footer">2022 Fogle Farms LLC <br> Website created by Austin Fogle
+    <span><img class="logoPic2" [src]="imageURL1"></span>
+  </footer>
 
 
 

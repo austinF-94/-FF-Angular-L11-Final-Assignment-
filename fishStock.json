@@ -1,7 +1,15 @@
 {
   "Fish": [
     {
-      "id": 7,
+      "id": 1,
+      "fishName": "Percula Clownfish",
+      "scientificName": "(Amphiprion percula)",
+      "careLevel": "Easy",
+      "imageURL": "https://www.liveaquaria.com/images/categories/product/lg_91948_Percula_Clownfish_0501141_183a.jpg",
+      "price": 24.99
+    },
+    {
+      "id": 2,
       "fishName": "Green Mandarin",
       "scientificName": "(Synchiropus splendidus)",
       "careLevel": "Difficult",
@@ -9,44 +17,108 @@
       "price": 34.99
     },
     {
-      "id": 8,
-      "fishName": "Volitan Lionfish",
-      "scientificName": "(Pterois volitans)",
+      "id": 3,
+      "fishName": "Annularis Angelfish",
+      "scientificName": "(Pomacanthus annularis) ",
       "careLevel": "Moderate",
-      "imageURL": "https://www.reefaquarium.com/wp-content/reefer/2013/04/ll1_zpse6a14ae51.jpg",
+      "imageURL": "https://www.liveaquaria.com/images/categories/large/lg_66765_Annularis_Angelfish.jpg",
       "price": 99.99
     },
     {
-      "id": 9,
-      "fishName": "Acropora cerealis",
-      "scientificName": "Acropora sp",
+      "id": 5,
+      "fishName": "Regal Angelfish",
+      "scientificName": "(Pterapogon kauderni)",
+      "careLevel": "Easy",
+      "imageURL": "https://www.liveaquaria.com/images/categories/large/lg83182RedSeaRegalAngelfish.jpg",
+      "price": "149.999"
+    },
+    {
+      "id": 6,
+      "fishName": "Strawberry Shortcake Acropora Coral",
+      "scientificName": "(Acropora microclados)",
       "careLevel": "Difficult",
-      "imageURL": "https://www.liveaquaria.com/images/categories/product/lg-2660287-02.jpg",
-      "price": "119.99"
+      "imageURL": "https://www.liveaquaria.com/images/categories/large/lg_42302_Strawberry_Shortcake.jpg",
+      "price": 99.99
     },
     {
       "id": 7,
-      "fishName": "Green Mandarin",
-      "scientificName": "(Synchiropus splendidus)",
-      "careLevel": "Difficult",
-      "imageURL": "https://www.liveaquaria.com/images/categories/large/lg_71302_Green_Mandarin.jpg",
-      "price": 34.99
+      "fishName": "Pipe Organ Coral",
+      "scientificName": "(Tubipora musica)",
+      "careLevel": "Easy",
+      "imageURL": "https://www.liveaquaria.com/images/categories/product/lg_Pipe_Organ.jpg",
+      "price": 37.99
     },
     {
       "id": 8,
-      "fishName": "Volitan Lionfish",
-      "scientificName": "(Pterois volitans)",
-      "careLevel": "Moderate",
-      "imageURL": "https://www.reefaquarium.com/wp-content/reefer/2013/04/ll1_zpse6a14ae51.jpg",
-      "price": 99.99
+      "fishName": "Taro Tree Coral",
+      "scientificName": "(Capnella sp.)",
+      "careLevel": "Easy",
+      "imageURL": "https://www.liveaquaria.com/images/categories/product/lg_012320_052.jpg",
+      "price": 39.99
     },
     {
       "id": 9,
-      "fishName": "Acropora cerealis",
-      "scientificName": "Acropora sp",
+      "fishName": "Hammer Coral",
+      "scientificName": "(Euphyllia ancora)",
+      "careLevel": "Moderate",
+      "imageURL": "https://www.liveaquaria.com/images/categories/product/lg_Hammer.jpg",
+      "price": 44.99
+    },
+    {
+      "id": 10,
+      "fishName": "Yellow Tang",
+      "scientificName": "(Zebrasoma flavescens)",
+      "careLevel": "Moderate",
+      "imageURL": "https://www.liveaquaria.com/images/categories/large/lg_Yellow_Tang.jpg",
+      "price": 249.99
+    },
+    {
+      "id": 11,
+      "fishName": "Snowflake Eel",
+      "scientificName": "(Echidna nebulosa)",
+      "careLevel": "Moderate",
+      "imageURL": "https://www.liveaquaria.com/images/categories/large/lg_70678_Snowflake_Eel.jpg",
+      "price": 69.99
+    },
+    {
+      "id": 12,
+      "fishName": "Blue Tang",
+      "scientificName": "(Paracanthurus hepatus)",
       "careLevel": "Difficult",
-      "imageURL": "https://www.liveaquaria.com/images/categories/product/lg-2660287-02.jpg",
-      "price": "119.99"
+      "imageURL": "https://www.liveaquaria.com/images/categories/large/lg_73746_Blue_Tang.jpg",
+      "price": 129.99
+    },
+    {
+      "id": 13,
+      "fishName": "Reidi Seahorse",
+      "scientificName": "(Hippocampus reidi)",
+      "careLevel": "Difficult",
+      "imageURL": "https://www.liveaquaria.com/images/categories/product/lg_0402181_209.jpg",
+      "price": 99.99
+    },
+    {
+      "id": 14,
+      "fishName": "Longfin Black Ice Clownfish",
+      "scientificName": "(Amphiprion ocellaris)",
+      "careLevel": "Easy",
+      "imageURL": "https://www.liveaquaria.com/images/categories/product/lg-0315191-140.jpg",
+      "price": 279.99
+    },
+    {
+      "id": 15,
+      "fishName": "Black Storm Clownfish",
+      "scientificName": "(Amphiprion ocellaris var.)",
+      "careLevel": "Moderate",
+      "imageURL": "https://www.liveaquaria.com/images/categories/product/lg_0206191_249.jpg",
+      "price": 156.99
+    },
+    {
+      "id": 16,
+      "fishName": "Bangai Cardinalfish",
+      "scientificName": "(Pterapogon kauderni) ",
+      "careLevel": "Easy",
+      "imageURL": "https://www.liveaquaria.com/images/categories/product/lg_114321_Kauderns_CF.jpg",
+      "price": "29.99"
     }
   ]
 }

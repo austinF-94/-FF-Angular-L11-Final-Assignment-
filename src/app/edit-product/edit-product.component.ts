@@ -11,22 +11,22 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class EditProductComponent implements OnInit {
     id: number = 0;
 
-    newProduct: Fish = new Fish();
+    currentProduct: Fish = new Fish()
 
     constructor(private service: FishStoreService, private actRoute: ActivatedRoute, private router: Router) { }
   
     ngOnInit(): void {
         const routeId = this.actRoute.snapshot.paramMap.get("id") ?? "";
         this.id = parseInt(routeId);
-        this.service.getProductById(this.id).subscribe(foundContact => {
-            this.newProduct = foundContact;
+        this.service.getProductById(this.id).subscribe(foundProduct => {
+            this.currentProduct = foundProduct;
         });
     }
   
     onSubmit(){
-      this.service.editContactByID(this.id, this.newProduct).subscribe(edittedContact => {
-        console.log(edittedContact);
-        this.router.navigateByUrl("/contacts");
+      this.service.editProductByID(this.id, this.currentProduct).subscribe(edittedProduct => {
+        console.log(edittedProduct);
+        this.router.navigateByUrl("/products");
       })
     }
 }

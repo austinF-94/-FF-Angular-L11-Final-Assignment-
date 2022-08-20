@@ -16,9 +16,20 @@
     margin-left: .5%;
     margin-right: 1%;
 }
-.logoPic 
+.logoPic1 
 {
     display: block;
     margin-left: 5%;
     width: 20%;
   }
+  .Footer
+{
+  text-align: center;
+  background-color: aqua;
+}
+.logoPic2 
+{
+  display: block;
+  margin: auto;    
+  width: 3%;
+}
